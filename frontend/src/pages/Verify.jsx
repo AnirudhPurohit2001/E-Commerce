@@ -4,7 +4,6 @@ import { useSearchParams } from 'react-router-dom'
 import { backendURL } from '../../../admin/src/App'
 import { toast } from 'react-toastify'
 import axios from 'axios'
-import Login from '../../../admin/src/components/Login'
 
 const Verify = () => {
 
