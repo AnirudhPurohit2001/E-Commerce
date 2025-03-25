@@ -6,11 +6,12 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   optimizeDeps: {
-    include: ['axios'],
+    include: ['axios', 'react-router-dom'],
   }, build: {
     rollupOptions: {
-      external: ['axios', 'react-toastify'], // Ensure axios is included correctly
+      external: ['axios', 'react-toastify', 'react-router-dom'], // Ensure axios is included correctly
     },
   },
   server: { port: 5173 }
+
 })
