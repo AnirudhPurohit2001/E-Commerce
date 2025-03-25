@@ -5,5 +5,12 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: ['axios'],
+  }, build: {
+    rollupOptions: {
+      external: ['axios'], // Ensure axios is included correctly
+    },
+  },
   server: { port: 5173 }
 })
