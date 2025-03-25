@@ -9,7 +9,7 @@ export default defineConfig({
     include: ['axios', 'react-router-dom'],
   }, build: {
     rollupOptions: {
-      external: ['axios', 'react-toastify', 'react-router-dom'], // Ensure axios is included correctly
+      external: ['axios', 'react-toastify'],
     },
   },
   server: { port: 5173 }
