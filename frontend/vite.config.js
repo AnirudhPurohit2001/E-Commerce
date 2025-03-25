@@ -9,7 +9,7 @@ export default defineConfig({
     include: ['axios'],
   }, build: {
     rollupOptions: {
-      external: ['axios'], // Ensure axios is included correctly
+      external: ['axios', 'react-toastify'], // Ensure axios is included correctly
     },
   },
   server: { port: 5173 }
