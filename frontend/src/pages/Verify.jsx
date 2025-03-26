@@ -1,13 +1,12 @@
 import React, { useContext, useEffect } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { useSearchParams } from 'react-router-dom'
-import { backendURL } from '../../../admin/src/App'
 import { toast } from 'react-toastify'
 import axios from 'axios'
 
 const Verify = () => {
 
-    const { navigate, token, setCartItems, bakendURL } = useContext(ShopContext)
+    const { navigate, token, setCartItems, backendURL } = useContext(ShopContext)
     const [searchParams, setSearchParams] = useSearchParams()
 
     const success = searchParams.get('success')
