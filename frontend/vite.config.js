@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   optimizeDeps: {
-    include: ['axios', 'react-router-dom'],
+    include: ['axios', 'react-router-dom', 'react-toastify'],
   }, build: {
     rollupOptions: {
       external: ['axios', 'react-toastify'],
