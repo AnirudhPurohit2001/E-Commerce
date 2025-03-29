@@ -8,9 +8,6 @@ export default defineConfig({
   optimizeDeps: {
     include: ['axios', 'react-router-dom', 'react-toastify'],
   }, build: {
-    rollupOptions: {
-      external: ['axios', 'react-toastify'],
-    },
   },
   server: { port: 5173 }
 
